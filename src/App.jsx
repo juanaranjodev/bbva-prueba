@@ -27,7 +27,7 @@ function App() {
       <p className="read-the-docs">
         Descargar el .zip con los archivos <a href="/folder/image/img-laptop.png">Aqui</a>
       </p>
-      <img src={imgRandom} alt="Imagen de laptop" className="img-laptop" />
+     {/* <img src={imgRandom} alt="Imagen de laptop" className="img-laptop" /> */}
     </>
   )
 }
