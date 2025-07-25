@@ -24,7 +24,7 @@ function App() {
       <Form />
       </div>
       <p className="read-the-docs">
-        Descargar el .zip con los archivos <a href="">Aqui</a>
+        Descargar el .zip con los archivos <a href="/folder/image/img-laptop.png">Aqui</a>
       </p>
     </>
   )
