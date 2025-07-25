@@ -40,6 +40,7 @@ Puede descargar los archivos en:
 ## ⚙️ Consideraciones técnicas
 
 - Las imágenes están alojadas en **Cloudinary** para asegurar una carga rápida.
+- Se evitop el uso de `Media queries` debido a que no todos los servidores de correos los usa.
 - Los estilos están **incrustados (`inline`)** para garantizar compatibilidad con los clientes de correo más exigentes.
 - Se evitó el uso de `JavaScript` o `CSS externos` intencionalmente, ya que no son soportados en correos electrónicos.
 - Se incluyo HTML semantico aunque no sea comun en la contruccion de emails.
