@@ -20,14 +20,10 @@ function App() {
           <img src={juanLogo} className="logo react" alt="Juan logo" />
         </a>
       </div>
-      <h1>Prueba Técnica</h1>
+      <h1>Prueba Técnica para el Banco BBVA </h1>
       <div className="card">
       <Form />
       </div>
-      <a href='/folder/index.html' >Click</a>
-      <p className="read-the-docs">
-        Descargar el .zip con los archivos <a href="/folder.zip" download>Aquí</a>
-      </p>
     </>
   )
 }
