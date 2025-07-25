@@ -29,6 +29,10 @@ Puedes ver la versión en línea del HTML en este enlace:
 
 🔗 [Ver plantilla](https://juanaranjodev.github.io/bbva-prueba/folder/index.html)
 
+Puede descargar los archivos en:
+
+🔗 [Descargar Archivos](https://juanaranjodev.github.io/bbva-prueba/folder.zip)
+
 > Se recomienda abrir el archivo en un navegador de escritorio y móvil para comprobar su adaptabilidad.
 
 ---
@@ -38,6 +42,7 @@ Puedes ver la versión en línea del HTML en este enlace:
 - Las imágenes están alojadas en **Cloudinary** para asegurar una carga rápida.
 - Los estilos están **incrustados (`inline`)** para garantizar compatibilidad con los clientes de correo más exigentes.
 - Se evitó el uso de `JavaScript` o `CSS externos` intencionalmente, ya que no son soportados en correos electrónicos.
+- Se incluyo HTML semantico aunque no sea comun en la contruccion de emails.
 - El código fue validado para evitar errores de renderizado.
 
 ---

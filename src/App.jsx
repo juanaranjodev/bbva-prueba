@@ -24,6 +24,9 @@ function App() {
       <div className="card">
       <Form />
       </div>
+      <p className="read-the-docs">
+        Descargar el <strong>.zip </strong>con los archivos <a href="https://juanaranjodev.github.io/bbva-prueba/folder.zip" target="_blank" rel="noopener noreferrer">Aquí</a>
+      </p>
     </>
   )
 }
