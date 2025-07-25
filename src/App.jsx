@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import juanLogo from './assets/logo-juan.png'
+import imgRandom from './assets/image/img-laptop.png'
 import bbvaLogo from './assets/logo-BBVA.png'
 import './App.css'
 import Form from './Form';
@@ -26,7 +27,7 @@ function App() {
       <p className="read-the-docs">
         Descargar el .zip con los archivos <a href="/folder/image/img-laptop.png">Aqui</a>
       </p>
-      <img src="/folder/image/img-laptop.png" alt="Imagen de laptop" className="img-laptop" />
+      <img src={imgRandom} alt="Imagen de laptop" className="img-laptop" />
     </>
   )
 }
