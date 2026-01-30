@@ -1,44 +1,56 @@
-import React, {useRef} from 'react';
-import emailjs from '@emailjs/browser';
-
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Form() {
-
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.init({
-      publicKey: 'd3c9c69311b4c6bb3e1f148d3be280ae',
+      publicKey: "d3c9c69311b4c6bb3e1f148d3be280ae",
     });
 
-    emailjs.sendForm('service_gmail', 'template_dreamcode', form.current, 'user_YcsuuRh1YwBuhIZyur5gR')
-      .then((result) => {
-            console.log(result.text);
-            console.log('se envio el correo')
-      }, (error) => {
+    emailjs
+      .sendForm(
+        "service_gmail",
+        "template_dreamcode",
+        form.current,
+        "user_YcsuuRh1YwBuhIZyur5gR",
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("se envio el correo");
+        },
+        (error) => {
           console.log(error.text);
-          console.log('NO SE envio el correo')
-      });
+          console.log("NO SE envio el correo");
+        },
+      );
 
-      setTimeout(function() {
-          e.target.reset(); // Resetea el formulario después de 3 segundos (3000 milisegundos)
-        }, 2000);
-    
-    
+    setTimeout(function () {
+      e.target.reset(); // Resetea el formulario después de 3 segundos (3000 milisegundos)
+    }, 2000);
   };
 
   function handleClick() {
-    console.log('Botón clickeado');
-}
+    console.log("Botón clickeado");
+  }
 
   return (
     <form ref={form} onSubmit={sendEmail}>
-        <p className="read-the-docs">
-         Agrega un correo para recibir el Mail
-        </p>
+      <p className="read-the-docs">Agrega un correo para recibir el Mail</p>
       <input
-        className="input"
+        className="input name"
+        name="name"
+        type="name"
+        id="name"
+        placeholder="Pepito Perez"
+        required
+      />
+      <br></br>
+      <input
+        className="input email"
         name="email"
         type="email"
         id="email"
@@ -46,11 +58,11 @@ function Form() {
         required
       />
       <br></br>
-    <button onClick={handleClick} type="submit">
+      <button onClick={handleClick} type="submit">
         Probar test
       </button>
     </form>
-  )
+  );
 }
 
 export default Form;
