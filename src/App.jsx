@@ -12,12 +12,8 @@ function App() {
         <a href="https://www.bbva.com/" target="_blank">
           <img src={bbvaLogo} className="logo" alt="BBVA logo" />
         </a>
-
-        <a href="https://github.com/juanaranjodev" target="_blank">
-          <img src={juanLogo} className="logo react" alt="Juan logo" />
-        </a>
       </div>
-      <h1>Prueba Técnica de CNCs - Banco BBVA </h1>
+      <h1>Testing CNCs - Banco BBVA </h1>
       <div className="card">
         <Form />
       </div>
